@@ -16,12 +16,12 @@
             <div class="inline">
                 <div class="inlinecontainer">
                     <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com batata</h1>
+                    <h1>Bife com Batata</h1>
                     <h1 class="inlinecontainertext">R$ 29,99</h1>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                            class="text" size="4" pattern="" inputmode="">
+                            class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
@@ -31,8 +31,8 @@
                     <h1 class="inlinecontainertext">R$ 24,99</h1>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                            class="text" size="4" pattern="" inputmode="">
+                        <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
@@ -42,8 +42,8 @@
                     <h1 class="inlinecontainertext">R$ 21,99</h1>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                            class="text" size="4" pattern="" inputmode="">
+                        <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
@@ -58,8 +58,8 @@
                     <h1 class="inlinecontainertext">R$ 9,99</h1>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                            class="text" size="4" pattern="" inputmode="">
+                        <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
@@ -69,8 +69,8 @@
                     <h1 class="inlinecontainertext">R$ 7,99</h1>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                            class="text" size="4" pattern="" inputmode="">
+                        <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
@@ -80,8 +80,8 @@
                     <h1 class="inlinecontainertext">R$ 11,99</h1>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                            class="text" size="4" pattern="" inputmode="">
+                        <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
@@ -93,11 +93,20 @@
             <input class="inputUser" id="phone" name="phone" placeholder="Digite o seu telefone" type="text">
             <input class="inputUser" id="email" name="email" placeholder="Digite o seu email" type="text">
         </div>
-        <button class="endbutton">Calcular</button>
+        <button class="endbutton" onclick="calc()">Calcular</button>
+        <div id="inicio">
+        </div>
+        <div id="saida">
+        </div>
+        <div id="saida2">
+        </div>
+        <div id="fim">
+        </div>
     </div>
 
     <script src="jquery-3.6.0.min.js"> </script>
     <script src="quantity.js"> </script>
-    
+    <script src="javascript.js"></script>
+
 </body>
 </html>
