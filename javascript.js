@@ -29,7 +29,7 @@ function calc(){
         fim.innerHTML += `<br><li>Prato: ${prods[input.id-1].name} - Preço unitário: ${formatter.format(prods[input.id-1].price)} - Quantidade: ${input.value}`
     }
 
-    //Mudar variaveis daqui pra baixo...*/
+    //Mudar variaveis daqui pra baixo*/
     var sum = [30, 25, 22, 10, 8, 12]
     var finalPrice = 0,
     quantSum = 0;
