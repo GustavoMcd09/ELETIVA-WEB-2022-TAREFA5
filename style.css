@@ -135,3 +135,34 @@ img{
     padding-left: 5%;
     width: 20%;
 }
+
+#inicio{
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#saida{
+    text-align: left;
+    font-weight: bolder;
+    margin-left: 1%;
+}
+
+#saida2{
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+#fim{
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 1%;
+}
+
+#calculo{
+    text-align: left;
+    margin-left: 1%;
+    font-weight: bolder;
+    font-size: medium;
+}
