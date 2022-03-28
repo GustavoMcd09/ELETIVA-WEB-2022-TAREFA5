@@ -8,8 +8,9 @@ var prods = [
 ];
 
 function calc(){
-
-    saida.innerHTML = '';
+    fim.innerHTML = '';
+    calculo.innerHTML = '';
+    
     var quantities = document.getElementsByName("quantity");
     var formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
