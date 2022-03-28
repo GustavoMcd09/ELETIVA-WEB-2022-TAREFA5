@@ -8,41 +8,41 @@ var prods = [
 ];
 
 function calc(){
-    fim.innerHTML = '';
-    calculo.innerHTML = '';
-    
+    end.innerHTML = '';
+    calculation.innerHTML = '';
+
+
     var quantities = document.getElementsByName("quantity");
     var formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     });
 
-    var texto = "Caro(a)";
-    document.querySelector('#inicio').innerHTML = texto;
 
-    var texto1 = document.querySelector('#name').value;
-    document.querySelector('#saida').innerHTML = texto1;
+    var text = "Caro(a) " + document.querySelector('#name').value;
+    document.querySelector('#exit').innerHTML = text;
 
-    var texto2 = "Seguem os dados do seu pedido. <br><br> O seu Pedido é:";
-    document.querySelector('#saida2').innerHTML = texto2;
+    var text1 = "Seguem os dados do seu pedido. <br><br> O seu Pedido é:";
+    document.querySelector('#exit1').innerHTML = text1;
+
 
     for (let input of quantities) {
-        fim.innerHTML += `<br><li>Prato: ${prods[input.id-1].name} - Preço unitário: ${formatter.format(prods[input.id-1].price)} - Quantidade: ${input.value}`
+        end.innerHTML += `<br><li>Prato: ${prods[input.id-1].name} - Preço unitário: ${formatter.format(prods[input.id-1].price)} - Quantidade: ${input.value}`
     }
 
-    //Mudar variaveis daqui pra baixo*/
+
     var sum = [30, 25, 22, 10, 8, 12]
-    var finalPrice = 0,
+    var endPrice = 0,
     quantSum = 0;
 
     for(i = 0 ; i < 6 ; i++){
         quant = document.getElementById(i + 1).value;
 
         if (quant != 0) {
-            var totalPrice = sum[i] * quant;
-            finalPrice += totalPrice;
-            quantSum += quant
+            var totalCost = sum[i] * quant;
+            endPrice += totalCost;
+            quantSum += quant;
         }
     }
-    calculo.innerHTML += "<br><br>Preço final R$ " + finalPrice + ",00";
+    calculation.innerHTML += "<br><br>Preço final R$ " + endPrice + ",00";
 }
